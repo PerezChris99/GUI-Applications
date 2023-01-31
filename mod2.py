@@ -32,5 +32,27 @@ slider_1 = customtkinter.CTkSlider(master=frame_1, command=slider_callback, from
 slider_1.pack(pady=12, padx=10)
 slider_1.set(0.5)
 
+entry_1 = customtkinter.CTkSlider(master=frame_1, placeholder_text="CTkEntry")
+entry_1.pack(pady=12, padx=10)
+
+optionmenu_1 = customtkinter.CTkOptionMenu(frame_1, values["Option 1", "Option 2", "Option 3"])
+optionmenu_1.pack(pady=12, padx=10)
+optionmenu_1.set("CTkOptionMenu")
+
+combobox_1 = customtkinter.CTkOptionMenu(frame_1, values["Option 1", "Option 2", "Option 3"])
+combobox_1.pack(pady=12, padx=10)
+optionmenu_1.set("CTkComboBox")
+
+checkbox_1 = customtkinter.CTkCheckBox(master=frame_1)
+checkbox_1.pack(pady=12, padx=10)
+
+radiobutton_var = tkinter.IntVar(value=1)
+
+radiobutton_1 = customtkinter.CTkRadioButton(master=frame_1, variable=radiobutton_var, value=1)
+radiobutton_1.pack(pady=12, padx=10)
+
+radiobutton_2 = customtkinter.CTkRadioButton(master=frame_1, variable=radiobutton_var, value=1)
+radiobutton_2.pack(pady=12, padx=10)
+
 
 root.mainloop()
