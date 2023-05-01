@@ -1,1 +1,6 @@
 env
+.env
+.sqlite2
+.sqlite3
+sqlite2
+sqlite3
